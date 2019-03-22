@@ -4,7 +4,7 @@ import gzip
 import re
 import mmap
 import collections
-import parsers.regex_templates
+import regex_templates
 
 NEWLINE = b'\n'
 
@@ -27,7 +27,7 @@ def check_if_entry_start(line):
     Override this implementation if you want to define a different way of detecting the start of a log entry
     """
 
-    regex = parsers.regex_templates.LOGBACK_BASIC_START
+    regex = regex_templates.LOGBACK_BASIC_START
     match = re.search(regex, line)
     return bool(match)
 

@@ -8,7 +8,7 @@ Author: Max Forsman
 import shlex
 import os
 from subprocess import Popen, PIPE
-from parsers.log_parser import LogParser
+from log_parser import LogParser
 
 ENCODING = 'utf-8'
 
